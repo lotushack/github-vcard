@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.fullName{
+  position: relative;
+  padding: 8px 8px 32px 8px;
+  background: black;
+  color: white;
+}
+
+.fullName::after{
+  background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: -webkit-xxx-large;
+  font-family: 'Lora', serif; 
+}
+
+h2{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.wrapper{
+  display: flex;
+  padding: 100px;
+}
+
+#theBasics{
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+
+}
+
+span{
+  color: cornflowerblue;
+}
+
+#theBasics p{
+  color: grey;
+  line-height: 0;
+
+}
+
+#theStory{
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+#theStory p{
+  color: grey;
+  border-left: grey;
+
+}
+
+#thePhoto{
+  padding-top: 100px;
+}
+
+img{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
